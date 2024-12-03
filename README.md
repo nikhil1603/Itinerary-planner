@@ -39,11 +39,26 @@ bash
 Copy code
 src/
 ├── components/
-│   ├── Auth.js            # Handles user authentication (login/register)
-│   ├── ItineraryList.js   # Displays user's itineraries and shared itineraries
-├── App.js                 # Main component, handles routing and logic
-├── firebase.js            # Firebase configuration and initialization
-├── index.css              # Styling for the app
+
+│   ├── Auth.js
+
+# Handles user authentication (login/register)
+
+│   ├── ItineraryList.js  
+
+# Displays user's itineraries and shared itineraries
+
+├── App.js              
+
+# Main component, handles routing and logic
+
+├── firebase.js           
+
+# Firebase configuration and initialization
+
+├── index.css            
+
+# Styling for the app
 
 🛠️ Technologies Used
 Frontend:
