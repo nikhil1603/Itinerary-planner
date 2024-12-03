@@ -1,5 +1,7 @@
 🌟 Crowdsourced Itinerary Planner
+
 Your ultimate travel companion!
+
 The Crowdsourced Itinerary Planner is a web application that allows users to create, edit, and share travel itineraries. It simplifies trip planning by enabling users to collaboratively build and manage travel plans while offering an intuitive interface and secure authentication.
 
 🚀 Features
