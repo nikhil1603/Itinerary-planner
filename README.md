@@ -40,25 +40,15 @@ Copy code
 src/
 ├── components/
 
-│   ├── Auth.js
+│   ├── Auth.js # Handles user authentication (login/register)
 
-# Handles user authentication (login/register)
+│   ├── ItineraryList.js   # Displays user's itineraries and shared itineraries
 
-│   ├── ItineraryList.js  
+├── App.js    # Main component, handles routing and logic
 
-# Displays user's itineraries and shared itineraries
+├── firebase.js    # Firebase configuration and initialization
 
-├── App.js              
-
-# Main component, handles routing and logic
-
-├── firebase.js           
-
-# Firebase configuration and initialization
-
-├── index.css            
-
-# Styling for the app
+├── index.css      # Styling for the app
 
 🛠️ Technologies Used
 Frontend:
