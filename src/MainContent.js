@@ -145,21 +145,26 @@ function App() {
 
   return (
     <div className="App text-center min-h-screen py-8 px-4">
-      <header className="mb-12">
-        <h1>🌟 Crowdsourced Itinerary Planner</h1>
-        <p>Your ultimate travel companion.</p>
-        {user && (
-          <div className="flex items-center justify-center space-x-4">
-            <span className="text-lg font-semibold">{user.displayName || user.email}</span> {/* Display user's name or email */}
-            <button
-              onClick={handleLogout}
-              className="px-6 py-3 font-bold text-white bg-gradient-to-r from-red-400 to-red-600 rounded-full shadow-lg transform transition hover:scale-105 hover:shadow-xl active:scale-95"
-            >
-              Logout
-            </button>
-          </div>
-        )}
-      </header>
+      <header className="flex items-center justify-between mb-12">
+  <div className="text-center w-full">
+    <h1 className="text-3xl font-bold">🌟 Crowdsourced Itinerary Planner</h1>
+    <p className="text-gray-600">Your ultimate travel companion.</p>
+  </div>
+
+  {user && (
+    <div className="absolute top-4 right-4 flex items-center space-x-4">
+      <span className="text-sm text-gray-700 font-medium bg-gray-100 px-3 py-1 rounded-full shadow-sm border border-gray-300">
+        {user.displayName || user.email}
+      </span>
+      <button
+        onClick={handleLogout}
+        className="px-4 py-2 font-semibold text-white bg-gradient-to-r from-red-500 to-orange-500 rounded-full shadow-lg transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-xl active:scale-95 focus:outline-none focus:ring-4 ring-red-500 hover:ring-orange-500"
+      >
+        🔒 Logout
+      </button>
+    </div>
+  )}
+</header>
       <Auth user={user} />
 
       {user && (
